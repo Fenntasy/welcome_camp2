@@ -1,0 +1,23 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+  <form action="/login" method="POST">
+    <div>
+      <label>Email:</label>
+      <!-- take care here to name the field 'username' for passport to work -->
+      <input type="text" name="username"/><br/>
+    </div>
+    <div>
+      <label>Password:</label>
+      <input type="password" name="password"/>
+    </div>
+    <div>
+      <button type="submit">
+        Log in
+      </button>
+    </div>
+  </form>
+  <div>
+    Or <a href="/auth/facebook">log via facebook</a>
+  </div>
+{% endblock %}

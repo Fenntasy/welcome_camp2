@@ -1,0 +1,11 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+  <h1>Profile</h1>
+  <ul>
+    <li> ID: {{id}}</li>
+    <li> Name: {{name}}</li>
+    <li> email: {{email}}</li>
+  </ul>
+  <a href="/logout">Log out</a>
+{% endblock %}
